@@ -1,0 +1,42 @@
+{
+  "name": "kordonfm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sync-android": "npx cap sync android",
+    "apk": "npm run build && npm run sync-android && cd android && ./gradlew assembleDebug",
+    "ipa": "npm run build && npm run sync-ios && cd ios/App && xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -destination generic/platform=iOS -archivePath App.xcarchive archive && xcodebuild -exportArchive -archivePath App.xcarchive -exportPath . -exportOptionsPlist exportOptions.plist",
+    "sync-ios": "npx cap sync ios",
+    "ios-dev": "npm run build && npm run sync-ios && npx cap run ios",
+    "ios-sim": "npm run build && npx cap sync ios && npx cap run ios",
+    "ios-device": "npm run build && npx cap sync ios && npx cap run ios --target 00008030-000368D80179802E"
+  },
+  "dependencies": {
+    "@capacitor-community/native-audio": "^7.0.0",
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/browser": "^7.0.1",
+    "@capacitor/cli": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
+    "@capacitor/ios": "^7.4.0",
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-h5-audio-player": "^3.10.0",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

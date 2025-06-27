@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">kordonmedya</string>
+    <string name="title_activity_main">kordonmedya</string>
+    <string name="package_name">com.kordonmedya.app</string>
+    <string name="custom_url_scheme">com.kordonmedya.app</string>
+</resources>
