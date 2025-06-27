@@ -13,7 +13,9 @@
     "sync-ios": "npx cap sync ios",
     "ios-dev": "npm run build && npm run sync-ios && npx cap run ios",
     "ios-sim": "npm run build && npx cap sync ios && npx cap run ios",
-    "ios-device": "npm run build && npx cap sync ios && npx cap run ios --target 00008030-000368D80179802E"
+    "ios-device": "npm run build && npx cap sync ios && npx cap run ios --target 00008030-000368D80179802E",
+    "predeploy": "npm run build && touch out/.nojekyll",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@capacitor-community/native-audio": "^7.0.0",
