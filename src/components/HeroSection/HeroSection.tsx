@@ -32,7 +32,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     <section
       className="relative py-20 overflow-hidden"
       style={{
-        backgroundImage: "url('/kordon.webp')",
+        backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH}/kordon.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

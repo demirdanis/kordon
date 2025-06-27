@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = ({
               style={{ backgroundColor: "#ffffff" }}
             >
               <img
-                src="/BannerLogo.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/BannerLogo.png`}
                 alt="Kordon Medya Logo"
                 className="h-10 object-contain"
               />

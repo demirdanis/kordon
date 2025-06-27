@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="flex items-center space-x-3 mb-4">
               <span className="bg-white bg-opacity-70 rounded-[8px] p-2">
                 <img
-                  src="/BannerLogo.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/BannerLogo.png`}
                   alt="Kordon Medya Logo"
                   className="h-8 object-contain"
                 />
