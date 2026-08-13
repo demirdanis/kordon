@@ -6,7 +6,7 @@ export const radioStations = [
     description: "Yeni Dostunuz",
     color: "bg-gradient-to-r from-green-600 to-green-800",
     genre: "Hit Müzik",
-    streamUrl: "http://kordontv1.serverroom.us:8746/;",
+    streamUrl: "https://radyo.medyahost.com.tr/8034/stream",
   },
   {
     id: "kordon-fm",
@@ -15,7 +15,7 @@ export const radioStations = [
     description: "İzmir'in Sesi",
     color: "bg-gradient-to-r from-blue-600 to-blue-800",
     genre: "Pop & Rock",
-    streamUrl: "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service", //"http://162.244.80.31:8846/;",
+    streamUrl: "https://radyo.medyahost.com.tr/8050/stream", //"http://162.244.80.31:8846/;",
   },
   {
     id: "radyo-kordelya",
@@ -24,7 +24,7 @@ export const radioStations = [
     description: "Klasik ve Sanat",
     color: "bg-gradient-to-r from-purple-600 to-purple-800",
     genre: "Klasik & Sanat",
-    streamUrl: "http://162.244.80.31:8646/;",
+    streamUrl: "https://radyo.medyahost.com.tr/8048/stream",
   },
   {
     id: "imbat-slow",

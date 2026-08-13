@@ -99,6 +99,7 @@ export const SimpleRadioPlayer: React.FC = () => {
         bottom: 0,
         left: 0,
         zIndex: 99999,
+        opacity:0,
         // display: "none",
       }}
       onPlay={handlePlay}
