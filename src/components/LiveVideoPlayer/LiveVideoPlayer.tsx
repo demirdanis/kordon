@@ -11,6 +11,7 @@ export const LiveVideoPlayer: React.FC<LiveVideoPlayerProps> = ({
   onClose,
   videoId,
 }) => {
+  console.log(videoId)
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center">
