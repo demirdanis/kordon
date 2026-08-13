@@ -34,12 +34,21 @@ export const LiveVideoPlayer: React.FC<LiveVideoPlayerProps> = ({
         </svg>
       </button>
       <div className="w-full max-w-2xl aspect-video bg-black rounded-xl overflow-hidden shadow-lg flex items-center justify-center">
-        <iframe
+        {/* <iframe
           width="100%"
           height="100%"
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0&showinfo=0`}
           title="YouTube video player"
           allow="autoplay; encrypted-media"
+          allowFullScreen
+          className="w-full h-full"
+        /> */}
+        <iframe
+          width="100%"
+          height="100%"
+          src={`https://player.twitch.tv/?channel=kordontv&parent=${window.location.hostname}&autoplay=true&muted=false`}
+          title="Twitch Stream"
+          allow="autoplay; fullscreen"
           allowFullScreen
           className="w-full h-full"
         />
